@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { CourseComparisonComponent } from './course-comparison/course-comparison.component';
+import { ProductsComponent } from './products/products.component';
 import { TrackerComponent } from './tracker/tracker.component';
 
 const routes: Routes = [
@@ -21,7 +21,11 @@ const routes: Routes = [
   },
   {
     path: 'products',
-    component: CourseComparisonComponent
+    component: ProductsComponent,
+    loadChildren: () =>
+      import('./products/products.module').then(
+        (route) => route.ProductsModule
+      )
   },
   {
     path: 'tracker',

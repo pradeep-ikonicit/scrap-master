@@ -1,0 +1,6 @@
+.align-button {
+    text-align: end;
+    align-self: flex-end;
+    padding: 10px 8px 10px 0px;
+    margin-right: 12px;
+  }

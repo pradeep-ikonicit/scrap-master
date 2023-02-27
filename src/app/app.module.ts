@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { SideNavComponent } from './shared/components/side-nav/side-nav.component';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import { CourseComparisonComponent } from './course-comparison/course-comparison.component';
+import { ProductsComponent } from './products/products.component';
 import { TrackerComponent } from './tracker/tracker.component';
+import { ProductsModule } from './products/products.module';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,17 +18,17 @@ import { TrackerComponent } from './tracker/tracker.component';
     LoginComponent,
     CreateUserComponent,
     DashboardComponent,
-    SideNavComponent,
-    HeaderComponent,
-    FooterComponent,
-    CourseComparisonComponent,
     TrackerComponent,
+    HeaderComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule,
+    ProductsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
