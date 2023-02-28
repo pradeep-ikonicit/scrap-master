@@ -5,6 +5,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductsComponent } from './products/products.component';
 import { TrackerComponent } from './tracker/tracker.component';
+import { AddTrackerComponent } from './add-tracker/add-tracker.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 const routes: Routes = [
   {
@@ -30,6 +32,14 @@ const routes: Routes = [
   {
     path: 'tracker',
     component: TrackerComponent
+  },
+  {
+    path: 'add-tracker',
+    component: AddTrackerComponent
+  },
+  {
+    path: 'add-product',
+    component: AddProductComponent
   },
 ];
 

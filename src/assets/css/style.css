@@ -232,10 +232,8 @@ h6 {
   color: #00000f;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  border: 1px solid;
-  border-radius: 10px;
-  background-color: aliceblue;
 }
+
 .card-title span {
   color: #899bbd;
   font-size: 14px;

@@ -1,11 +1,4 @@
-.align-button {
-    text-align: end;
-    align-self: flex-end;
-    padding: 10px 8px 10px 0px;
-    margin-right: 12px;
-  }
-
-  .card-title {
+.card-title {
     padding: 5px 0 5px 0;
     font-size: 18px;
     font-weight: 500;
@@ -15,4 +8,13 @@
     border: 1px solid;
     border-radius: 10px;
     background-color: aliceblue;
+  }
+
+  .form-title {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #00000f;
+    font-family: "Poppins", sans-serif;
   }

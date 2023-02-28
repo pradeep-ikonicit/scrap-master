@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProductsComponent } from './products/products.component';
 import { TrackerComponent } from './tracker/tracker.component';
-import { ProductsModule } from './products/products.module';
-import { HeaderComponent } from './shared/components/header/header.component';
+import { AddTrackerComponent } from './add-tracker/add-tracker.component';
+import { AddProductComponent } from './add-product/add-product.component';
+// import { ProductsModule } from './products/products.module';
+// import { HeaderComponent } from './shared/components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,16 +20,15 @@ import { HeaderComponent } from './shared/components/header/header.component';
     CreateUserComponent,
     DashboardComponent,
     TrackerComponent,
-    HeaderComponent,
-    ProductsComponent
+    AddTrackerComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedModule,
-    ProductsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
