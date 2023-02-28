@@ -7,6 +7,8 @@ import { ProductsComponent } from './products/products.component';
 import { TrackerComponent } from './tracker/tracker.component';
 import { AddTrackerComponent } from './add-tracker/add-tracker.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { AlertsComponent } from './alerts/alerts.component';
+import { AddAlertComponent } from './add-alert/add-alert.component';
 
 const routes: Routes = [
   {
@@ -40,6 +42,14 @@ const routes: Routes = [
   {
     path: 'add-product',
     component: AddProductComponent
+  },
+  {
+    path: 'alerts',
+    component: AlertsComponent
+  },
+  {
+    path: 'add-alert',
+    component: AddAlertComponent
   },
 ];
 

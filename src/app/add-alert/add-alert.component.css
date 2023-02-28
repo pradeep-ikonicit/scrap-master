@@ -1,0 +1,30 @@
+.form-title {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #00000f;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .form-select {
+    display: inline;
+    width: 75%;
+  }
+
+  .drop-down-label {
+    color: white;
+    background-color: #2e6dbc;
+    font-weight: 400;
+    padding: 3px;
+    width: 20%;
+  }
+
+  .label-plus-dd {
+    width: 80%;
+    display: inline-flex;
+  }
+
+  .form-control {
+    width: 75%;
+  }

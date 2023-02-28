@@ -1,0 +1,79 @@
+<app-header></app-header>
+<!-- <app-side-nav></app-side-nav> -->
+
+
+<main id="main" class="main">
+    <!-- <div class="pagetitle">
+       <h1>Alerts</h1>
+       <nav>
+          <ol class="breadcrumb">
+             <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+             <li class="breadcrumb-item">Alerts</li>
+          </ol>
+       </nav>
+    </div> -->
+    
+    <section class="section">
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="card">
+                <div class="align-button">
+                    <!-- <a routerLink="/products/add-product"> -->
+                      <button type="button" class="btn btn-primary" (click)="addNewAlert()">
+                        <i class="bi bi-plus-circle"></i> Add Alert
+                      </button>
+                    <!-- </a> -->
+                  </div>
+                <div class="card-body">
+                   <h5 class="card-title">MY ALERTS</h5>
+                  
+                   <table class="table datatable">
+                      <thead class="table-header" style="border: 1px;">
+                         <tr>
+                            <td scope="col">Active</td>
+                            <td scope="col">Alert</td>
+                            <td scope="col">Target</td>
+                            <td scope="col">Field</td>
+                            <td scope="col">USD / %</td>
+                            <td scope="col">Condition</td>
+                            <td scope="col">Value</td>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr>
+                            <td><img src="assets/img/alert-active.png" style="height: 25px;"></td>
+                            <td><img src="assets/img/alert-bell.png" style="height: 25px;"></td>
+                            <td>CE Shop</td>
+                            <td>Offer Price</td>
+                            <td>USD</td>
+                            <td>Lower</td>
+                            <td>$30.00</td>
+                         </tr>
+                         <tr>
+                           <td><img src="assets/img/alert-active.png" style="height: 25px;"></td>
+                           <td><img src="assets/img/alert-bell.png" style="height: 25px;"></td>
+                           <td>CE Shop</td>
+                           <td>Offer Price</td>
+                           <td>%</td>
+                           <td>Lower</td>
+                           <td>10%</td>
+                        </tr>
+                        <tr>
+                           <td><img src="assets/img/alert-active.png" style="height: 25px;"></td>
+                           <td><img src="assets/img/alert-bell.png" style="height: 25px;"></td>
+                           <td>CE Shop</td>
+                           <td>Offer Price</td>
+                           <td>USD</td>
+                           <td>Lower</td>
+                           <td>$40.00</td>
+                        </tr>
+                       
+                         
+                      </tbody>
+                   </table>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+ </main>

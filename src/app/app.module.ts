@@ -10,6 +10,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TrackerComponent } from './tracker/tracker.component';
 import { AddTrackerComponent } from './add-tracker/add-tracker.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { AlertsComponent } from './alerts/alerts.component';
+import { AddAlertComponent } from './add-alert/add-alert.component';
 // import { ProductsModule } from './products/products.module';
 // import { HeaderComponent } from './shared/components/header/header.component';
 
@@ -21,7 +23,9 @@ import { AddProductComponent } from './add-product/add-product.component';
     DashboardComponent,
     TrackerComponent,
     AddTrackerComponent,
-    AddProductComponent
+    AddProductComponent,
+    AlertsComponent,
+    AddAlertComponent
   ],
   imports: [
     BrowserModule,

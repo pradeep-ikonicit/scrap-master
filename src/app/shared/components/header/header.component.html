@@ -3,15 +3,20 @@
     <div class="col-lg-6"><a routerLink="/dashboard" class="logo-1 d-flex align-items-center">
       <img src="assets/img/logo-1.png" alt="" />
       <!-- <span class="d-none d-lg-block">Scrap Master</span> -->
-    </a></div>
-    <div class="col-lg-6">
+    </a>
+  </div>
+    <div class="col-lg-4">
       <nav class="header-nav ms-auto" style="float: right">
+        <!-- <div id="settings-div" class="col-lg-4 d-flex align-items-right" style="width:100%">
+          <img src="assets/img/settings.png" alt="" style="height: 35px;"/>
+        </div> -->
         <ul class="d-flex align-items-center">
-          <li class="nav-item d-block d-lg-none">
+          <!-- <li class="nav-item d-block d-lg-none">
             <a class="nav-link nav-icon search-bar-toggle" href="#">
-              <i class="bi bi-search"></i>
+               <i class="bi bi-search"></i>
+              <img src="assets/img/settings.png" alt="" />
             </a>
-          </li>
+          </li> -->
 
           <li class="nav-item dropdown pe-3">
             <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
@@ -49,7 +54,7 @@
   <div class="d-flex align-items-center second-header">
     <div class="col-lg-3">
       <a routerLink="/dashboard" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="" />
+        <img src="assets/img/360-new.png" alt="" />
         <!-- <span class="d-none d-lg-block">Scrap Master</span> -->
       </a>
       <!-- <i (click)="sidebarToggle()" class="bi bi-list toggle-sidebar-btn"></i> -->
@@ -68,7 +73,7 @@
         <li class="nav-item" role="presentation"> <button  routerLink="/tracker" routerLinkActive="active"  class="nav-link" id="tracker-tab" data-bs-toggle="tab"
             data-bs-target="#bordered-tracker" type="button" role="tab" aria-controls="tracker"
             aria-selected="false">Tracker</button></li>
-        <li class="nav-item" role="presentation"> <button class="nav-link" id="alerts-tab" data-bs-toggle="tab"
+        <li class="nav-item" role="presentation"> <button  routerLink="/alerts" routerLinkActive="active" class="nav-link" id="alerts-tab" data-bs-toggle="tab"
               data-bs-target="#bordered-alerts" type="button" role="tab" aria-controls="alerts"
               aria-selected="true">Alerts</button></li>
         <li class="nav-item" role="presentation"> <button class="nav-link" id="reprots-tab" data-bs-toggle="tab"
