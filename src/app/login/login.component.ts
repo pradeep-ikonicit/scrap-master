@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(){
-    this.route.navigate(['dashboard']);
+    this.route.navigate(['productsuite']);
   }
 
 }

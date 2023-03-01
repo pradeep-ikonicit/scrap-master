@@ -1,15 +1,16 @@
 <app-header></app-header>
 
 <main id="main" class="main">
-  <!-- <div class="pagetitle">
+  <div class="pagetitle">
     <h1>Products</h1>
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
         <li class="breadcrumb-item">Products</li>
+        <li class="breadcrumb-item">Add Product</li>
       </ol>
     </nav>
-  </div> -->
+  </div>
 
   <section class="section">
     <div class="row">
@@ -17,21 +18,21 @@
 
         <div class="card">
           <div class="card-body">
-            <h5 class="form-title">Add Product</h5>
+            <h5 class="card-title">Add Product</h5>
             <form class="row g-3">
               <div class="col-4">
-                <label for="productId" class="form-label">Product ID *</label>
+                <label for="productId" class="form-label">Product ID <span style="color: red;">*</span></label>
                 <input type="text" class="form-control" id="productId" formControlName="productId" />
               </div>
 
               <div class="col-4">
-                <label for="name" class="form-label">Name *</label>
+                <label for="name" class="form-label">Name <span style="color: red;">*</span></label>
                 <input type="text" class="form-control" id="name" formControlName="name" />
               </div>
 
 
               <div class="col-4">
-                <label for="price" class="form-label">Price *</label>
+                <label for="price" class="form-label">Price <span style="color: red;">*</span></label>
                 <input type="text" class="form-control" id="price" formControlName="price" />
 
               </div>

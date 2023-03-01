@@ -12,6 +12,8 @@ import { AddTrackerComponent } from './add-tracker/add-tracker.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { AddAlertComponent } from './add-alert/add-alert.component';
+import { NgSelectModule } from "@ng-select/ng-select";
+import { ProductSuitePageComponent } from './product-suite-page/product-suite-page.component';
 // import { ProductsModule } from './products/products.module';
 // import { HeaderComponent } from './shared/components/header/header.component';
 
@@ -25,14 +27,16 @@ import { AddAlertComponent } from './add-alert/add-alert.component';
     AddTrackerComponent,
     AddProductComponent,
     AlertsComponent,
-    AddAlertComponent
+    AddAlertComponent,
+    ProductSuitePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    NgSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

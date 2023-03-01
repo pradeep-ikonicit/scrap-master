@@ -9,6 +9,7 @@ import { AddTrackerComponent } from './add-tracker/add-tracker.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { AddAlertComponent } from './add-alert/add-alert.component';
+import { ProductSuitePageComponent } from './product-suite-page/product-suite-page.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'productsuite',
+    component: ProductSuitePageComponent
   },
   {
     path: 'products',

@@ -1,15 +1,16 @@
 <app-header></app-header>
 
 <main id="main" class="main">
-  <!-- <div class="pagetitle">
-    <h1>Products</h1>
+  <div class="pagetitle">
+    <h1>Alerts</h1>
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
-        <li class="breadcrumb-item">Products</li>
+        <li class="breadcrumb-item">Alerts</li>
+        <li class="breadcrumb-item">Add Alert</li>
       </ol>
     </nav>
-  </div> -->
+  </div>
 
   <section class="section">
     <div class="row">
@@ -17,7 +18,7 @@
 
         <div class="card">
           <div class="card-body">
-            <h5 class="form-title">Add Alert</h5>
+            <h5 class="card-title">Add Alert</h5>
             <form class="row g-3">
               <!-- <div class="col-4">
                 <label for="productId" class="form-label">Product ID *</label>
@@ -25,7 +26,7 @@
               </div> -->
 
               <div class="col-4">
-                <label for="name" class="form-label">SET *</label><br>
+                <label for="name" class="form-label">SET <span style="color: red;">*</span></label><br>
                 <div class="label-plus-dd">
                     <span class="drop-down-label">Target </span><select class="form-select" aria-label="Product Lookup" id="productLookup" formControlName="productLookup">
                         <option>..CE Shop</option>
@@ -35,7 +36,7 @@
 
 
               <div class="col-4">
-                <label for="name" class="form-label">AND *</label><br>
+                <label for="name" class="form-label">AND <span style="color: red;">*</span></label><br>
                 <div class="label-plus-dd">
                     <span class="drop-down-label">Field </span><select class="form-select" aria-label="Product Lookup" id="productLookup" formControlName="productLookup">
                         <option>..Offer Price</option>
@@ -44,7 +45,7 @@
               </div>
 
               <div class="col-4">
-                <label for="name" class="form-label">BY *</label><br>
+                <label for="name" class="form-label">BY <span style="color: red;">*</span></label><br>
                 <select class="form-select" aria-label="Product Lookup" id="productLookup" formControlName="productLookup">
                     <option>USD</option>
                     <option>%</option>
@@ -52,7 +53,7 @@
               </div>
 
               <div class="col-4">
-                <label for="name" class="form-label">Condition *</label><br>
+                <label for="name" class="form-label">Condition <span style="color: red;">*</span></label><br>
                 <select class="form-select" aria-label="Product Lookup" id="productLookup" formControlName="productLookup">
                     <option>Higher</option>
                     <option>Lower</option>
@@ -60,7 +61,7 @@
               </div>
 
               <div class="col-4">
-                <label for="locale" class="form-label">Value *</label>
+                <label for="locale" class="form-label">Value <span style="color: red;">*</span></label>
                 <input type="text" class="form-control" id="locale" formControlName="locale" />
               </div>
 

@@ -229,9 +229,9 @@ h6 {
   padding: 5px 0 5px 0;
   font-size: 18px;
   font-weight: 500;
-  color: #00000f;
+  color: #2e6dbc;
   font-family: "Poppins", sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 .card-title span {
@@ -1184,6 +1184,6 @@ h6 {
   cursor: pointer;
   font-size: 1.5rem;
 }
-.text-center {
+/* .text-center {
   text-align: right !important;
-}
+} */

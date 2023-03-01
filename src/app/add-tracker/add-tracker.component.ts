@@ -9,6 +9,13 @@ import { Router } from '@angular/router';
 export class AddTrackerComponent implements OnInit {
 
   constructor(private router:Router) { }
+  products = [
+    { id: 1, name: "Select" },
+    { id: 2, name: "Package - The Basics" },
+    { id: 3, name: "Package - Exam Prep" },
+    { id: 4, name: "Package - Prep Plus" },
+  ];
+
 
   ngOnInit(): void {
   }

@@ -1,15 +1,16 @@
 <app-header></app-header>
 
 <main id="main" class="main">
-    <!-- <div class="pagetitle">
-        <h1>Products</h1>
+    <div class="pagetitle">
+        <h1>Trackers</h1>
         <nav>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
-                <li class="breadcrumb-item">Products</li>
+                <li class="breadcrumb-item">Trackers</li>
+                <li class="breadcrumb-item">Add Tracker</li>
             </ol>
         </nav>
-    </div> -->
+    </div>
 
     <section class="section">
         <div class="row">
@@ -17,68 +18,77 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="form-title">Add Tracker</h5>
+                         <h5 class="card-title">Add Tracker</h5>
                         <form class="row g-3">
                             <div class="col-4">
-                                <label for="productId" class="form-label">Description *</label>
-                                <input type="text" class="form-control" id="productId" formControlName="productId" />
+                                <label for="productId" class="form-label">Description <span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" id="productId" />
                             </div>
 
                             <div class="col-4">
-                                <label for="name" class="form-label">Website/URL *</label>
-                                <input type="text" class="form-control" id="name" formControlName="name" />
+                                <label for="name" class="form-label">Website/URL <span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" id="name" />
                             </div>
+                            <h5 class="card-title">Optional Inputs</h5>
 
                             <div class="col-4">
-                                <label for="dosageId" class="form-label">My Product Match</label>
-                      
-                                <select
+                                <label class="form-label">My Product Match</label>
+                                <ng-select
+                                [items]="products"
+                                bindLabel="name"
+                                placeholder="Select"
+                                appendTo="body"
+                                [multiple]="true"
+                                class ="form-select">
+                                
+                              </ng-select>
+                                <!-- <select
                                   class="form-select"
                                   aria-label="Product Lookup"
                                   id="productLookup"
                                   formControlName="productLookup"
                                 >
-                                  <option>
-                                    Product Lookup
-                                  </option>
-                                </select>
+                                <option>Select</option>
+                                  <option>Package - The Basics</option>
+                                  <option>Package - Exam Prep</option>
+                                  <option>Package - Prep Plus</option>
+                                </select> -->
                             </div>
-
-
+                           
                             <div class="col-4">
                                 <label for="price" class="form-label">ID</label>
-                                <input type="text" class="form-control" id="price" formControlName="price" />
+                                <input type="text" class="form-control" id="price" />
 
                             </div>
                             <div class="col-4">
                                 <label for="additionalCosts" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="additionalCosts"
-                                    formControlName="additionalCosts" />
+                                     />
 
                             </div>
                             <div class="col-4">
                                 <label for="brand" class="form-label">Price</label>
-                                <input type="text" class="form-control" id="brand" formControlName="brand" />
+                                <input type="text" class="form-control" id="brand"  />
 
                             </div>
                             <div class="col-4">
                                 <label for="brand" class="form-label">Offer Price</label>
-                                <input type="text" class="form-control" id="brand" formControlName="brand" />
+                                <input type="text" class="form-control" id="brand" />
 
                             </div>
                             <div class="col-4">
                                 <label for="brand" class="form-label">Additional Price</label>
-                                <input type="text" class="form-control" id="brand" formControlName="brand" />
+                                <input type="text" class="form-control" id="brand" />
 
                             </div>
                             <div class="col-4">
                                 <label for="brand" class="form-label">Brand</label>
-                                <input type="text" class="form-control" id="brand" formControlName="brand" />
+                                <input type="text" class="form-control" id="brand"  />
 
                             </div>
                             <div class="col-4">
                                 <label for="locale" class="form-label">Locale</label>
-                                <input type="text" class="form-control" id="locale" formControlName="locale" />
+                                <input type="text" class="form-control" id="locale"  />
 
                             </div>
                             <div class="col-4">
