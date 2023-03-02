@@ -9,6 +9,15 @@
     border-radius: 10px;
     background-color: aliceblue;
   }
+  .card-title-report {
+    padding: 5px 0 5px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #00000f;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    
+  }
 
   .align-button {
     text-align: end;
