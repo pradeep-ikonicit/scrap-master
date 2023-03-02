@@ -10,6 +10,10 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { AddAlertComponent } from './add-alert/add-alert.component';
 import { ProductSuitePageComponent } from './product-suite-page/product-suite-page.component';
+import { ReportsComponent } from './reports/reports.component';
+import { ProductReportsComponent } from './product-reports/product-reports.component';
+import { TrackerReportsComponent } from './tracker-reports/tracker-reports.component';
+import { AlertReportsComponent } from './alert-reports/alert-reports.component';
 
 const routes: Routes = [
   {
@@ -56,6 +60,22 @@ const routes: Routes = [
     path: 'add-alert',
     component: AddAlertComponent
   },
+  {
+    path: 'reports',
+    component: ReportsComponent
+  },
+  {
+    path: 'product-reports',
+    component: ProductReportsComponent
+  },
+  {
+    path: 'tracker-reports',
+    component: TrackerReportsComponent
+  },
+  {
+    path: 'alert-reports',
+    component: AlertReportsComponent
+  }
 ];
 
 @NgModule({

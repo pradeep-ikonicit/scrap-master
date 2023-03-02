@@ -1,0 +1,48 @@
+<app-header></app-header>
+<!-- <app-side-nav></app-side-nav> -->
+
+
+<main id="main" class="main">
+    <div class="pagetitle">
+       <h1>Reports</h1>
+       <nav>
+          <ol class="breadcrumb">
+             <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+             <li class="breadcrumb-item">Reports</li>
+          </ol>
+       </nav>
+    </div>
+    
+    <section class="section">
+       <div class="row">
+          <div class="col-lg-12">
+             <div class="card">
+                <!-- <div class="align-button">
+                     <a routerLink="/products/add-product">
+                      <button type="button" class="btn btn-primary" (click)="addNewAlert()">
+                        <i class="bi bi-plus-circle"></i> Add Alert
+                      </button>
+                     </a>
+                  </div> -->
+                <div class="card-body">
+                   <h5 class="card-title">MY REPORTS</h5>
+                    <div class="report-icons">
+                        <div class="icon-wrapper" routerLink="/product-reports">
+                            <img src="assets/img/products-icon.png" height="150px"/><br>
+                            <h5 class="card-title">PRODUCTS</h5>
+                        </div>
+                        <div class="icon-wrapper" routerLink="/tracker-reports">
+                            <img src="assets/img/trackers-icon.png" height="150px"/><br>
+                            <h5 class="card-title">TRACKERS</h5>
+                        </div>
+                        <div class="icon-wrapper" routerLink="/alert-reports">
+                            <img src="assets/img/alerts-icon.png" height="150px"/><br>
+                            <h5 class="card-title">ALERTS</h5>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+ </main>

@@ -14,6 +14,10 @@ import { AlertsComponent } from './alerts/alerts.component';
 import { AddAlertComponent } from './add-alert/add-alert.component';
 import { NgSelectModule } from "@ng-select/ng-select";
 import { ProductSuitePageComponent } from './product-suite-page/product-suite-page.component';
+import { ReportsComponent } from './reports/reports.component';
+import { ProductReportsComponent } from './product-reports/product-reports.component';
+import { TrackerReportsComponent } from './tracker-reports/tracker-reports.component';
+import { AlertReportsComponent } from './alert-reports/alert-reports.component';
 // import { ProductsModule } from './products/products.module';
 // import { HeaderComponent } from './shared/components/header/header.component';
 
@@ -28,7 +32,11 @@ import { ProductSuitePageComponent } from './product-suite-page/product-suite-pa
     AddProductComponent,
     AlertsComponent,
     AddAlertComponent,
-    ProductSuitePageComponent
+    ProductSuitePageComponent,
+    ReportsComponent,
+    ProductReportsComponent,
+    TrackerReportsComponent,
+    AlertReportsComponent
   ],
   imports: [
     BrowserModule,
