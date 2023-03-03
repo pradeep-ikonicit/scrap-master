@@ -1,1 +1,135 @@
-<p>tracker-reports works!</p>
+<app-header></app-header>
+<!-- <app-side-nav></app-side-nav> -->
+
+
+<main id="main" class="main">
+    <div class="pagetitle">
+       <h1>Tracker Reports</h1>
+       <nav>
+          <ol class="breadcrumb">
+             <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+             <li class="breadcrumb-item">Tracker Reports</li>
+          </ol>
+       </nav>
+    </div>
+    
+    <section class="section">
+       <div class="row">
+          <div class="col-lg-12">
+            
+            <div class="card">
+               <div class="align-button">
+                    <!-- <a routerLink="/products/add-product"> -->
+                     <button type="button" class="btn" (click)="getFileContent()">
+                       Print
+                     </button> | 
+                     <button type="button" class="btn">
+                       Download
+                     </button>
+                   <!-- </a> -->
+               </div>
+               <div class="card-body"  >
+                  <h5 class="card-title">MY TRACKER REPORTS</h5>
+                 
+                  <div class="report-table">
+                    <table class="table datatable">
+                        <thead>
+                           <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">TRACKER NAME</th>
+                              <th scope="col">TRACKER WEBSITE/URL</th>
+                              <th scope="col">TRACKER DESCRIPTION</th>
+                              <th scope="col">MY PRODUCT MATCH</th>
+                              <th scope="col">COMPETITION PRODUCT ID</th>
+                              <th scope="col">COMPETITION PRODUCT NAME</th>
+                              <th scope="col">COMPETITION BRAND NAME</th>
+                              <th scope="col">COMPETITION LOCALE</th>
+                              <th scope="col">COMPETITION CATEGORY</th>
+                              <th scope="col">COMPETITION PRODUCT DESCRIPTION</th>
+                              <th scope="col">COMPETITION PRODUCT (PRICE1)</th>
+                              <th scope="col">COMPETITION PRODUCT (PRICE2)</th>
+                              <th scope="col">COMPETITION PRODUCT (PRICE3)</th>
+                              <th scope="col">COMPETITION PRODUCT SKU/BARCODE</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1</th>
+                              <td>CE SHOP 1</td>
+                              <td>https://www.ceshop.com/</td>
+                              <td>FL CE Package - Courses Only</td>
+                              <td>The Basics</td>
+                              <td>955555</td>
+                              <td>CE SHOP</td>
+                              <td>Real Estate</td>
+                              <td>FL</td>
+                              <td>Continuing Education</td>
+                              <td>Package - Courses Only</td>
+                              <td>$139</td>
+                              <td>$109</td>
+                              <td>$0</td>
+                              <td>SKU555111</td>
+                           </tr>
+                           <tr>
+                               <th scope="row">2</th>
+                               <td>CE SHOP 2</td>
+                               <td>https://www.ceshop.com/</td>
+                               <td>FL CE Package - Standard</td>
+                               <td>Exam Preparation</td>
+                               <td>966666</td>
+                               <td>CE SHOP</td>
+                               <td>Real Estate</td>
+                               <td>FL</td>
+                               <td>Continuing Education</td>
+                               <td>Package - Standard</td>
+                               <td>$199</td>
+                               <td>$139</td>
+                               <td>$0</td>
+                               <td>SKU666222</td>
+                            </tr>
+                            <tr>
+                               <th scope="row">3</th>
+                               <td>CE SHOP 3</td>
+                               <td>https://www.ceshop.com/</td>
+                               <td>FL CE Package - Value</td>
+                               <td>Exam Preparation Plus</td>
+                               <td>977777</td>
+                               <td>CE SHOP</td>
+                               <td>Real Estate</td>
+                               <td>FL</td>
+                               <td>Continuing Education</td>
+                               <td>Package - Value</td>
+                               <td>$245</td>
+                               <td>$185</td>
+                               <td>$0</td>
+                               <td>SKU777333</td>
+                            </tr>
+                            <tr>
+                               <th scope="row">4</th>
+                               <td>CE SHOP 4</td>
+                               <td>https://www.ceshop.com/</td>
+                               <td>FL CE Package - Premium</td>
+                               <td>Ultimate Learning</td>
+                               <td>988888</td>
+                               <td>CE SHOP</td>
+                               <td>Real Estate</td>
+                               <td>FL</td>
+                               <td>Continuing Education</td>
+                               <td>Package - Premium</td>
+                               <td>$369</td>
+                               <td>$254</td>
+                               <td>$0</td>
+                               <td>SKU888444</td>
+                            </tr>
+                         
+                           
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            
+          </div>
+       </div>
+    </section>
+ </main>

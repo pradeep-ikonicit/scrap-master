@@ -12,4 +12,8 @@ export class TrackerReportsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getFileContent() {
+    
+  }
+
 }
