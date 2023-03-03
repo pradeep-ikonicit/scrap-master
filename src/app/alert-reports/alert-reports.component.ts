@@ -12,4 +12,8 @@ export class AlertReportsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getFileContent() {
+    
+  }
+
 }

@@ -1,1 +1,100 @@
-<p>alert-reports works!</p>
+<app-header></app-header>
+<!-- <app-side-nav></app-side-nav> -->
+
+
+<main id="main" class="main">
+    <div class="pagetitle">
+       <h1>Alert Reports</h1>
+       <nav>
+          <ol class="breadcrumb">
+             <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+             <li class="breadcrumb-item">Alert Reports</li>
+          </ol>
+       </nav>
+    </div>
+    
+    <section class="section">
+       <div class="row">
+          <div class="col-lg-12">
+            
+            <div class="card">
+               <div class="align-button">
+                    <!-- <a routerLink="/products/add-product"> -->
+                     <button type="button" class="btn" (click)="getFileContent()">
+                       Print
+                     </button> | 
+                     <button type="button" class="btn">
+                       Download
+                     </button>
+                   <!-- </a> -->
+               </div>
+               <div class="card-body"  >
+                  <h5 class="card-title">MY ALERT REPORTS</h5>
+                 
+                  <div class="report-table">
+                    <table class="table datatable">
+                        <thead>
+                           <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">ALERT NAME</th>
+                              <th scope="col">ALERT DESCRIPTION</th>
+                              <th scope="col">ALERT TRACKER USED (SELECTION)</th>
+                              <th scope="col">ALERT TRACKER FIELD USED (SELECTION)</th>
+                              <th scope="col">ALERT USD or %</th>
+                              <th scope="col">ALERT CONDITION</th>
+                              <th scope="col">ALERT VALUE</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <th scope="row">1</th>
+                              <td>CE Shop HIGH FL CE Package - Courses Only</td>
+                              <td>This is my CE SHOP Alert HIGHER PRICE for FL CE Package - Courses Only</td>
+                              <td>CE SHOP 1</td>
+                              <td>COMPETITION</td>
+                              <td>USD</td>
+                              <td>HIGHER</td>
+                              <td>$30.00</td>
+                           </tr>
+                           <tr>
+                            <th scope="row">2</th>
+                            <td>CE Shop LOW FL CE Package - Courses Only</td>
+                            <td>This is my CE SHOP Alert LOWER PRICE for FL CE Package - Courses Only</td>
+                            <td>CE SHOP 1</td>
+                            <td>COMPETITION</td>
+                            <td>USD</td>
+                            <td>LOWER</td>
+                            <td>$30.00</td>
+                         </tr>
+                         <tr>
+                            <th scope="row">3</th>
+                            <td>CE Shop HIGH FL CE Package - Standard</td>
+                            <td>This is my CE SHOP Alert HIGHER PRICE for FL CE Package - Standard</td>
+                            <td>CE SHOP 2</td>
+                            <td>COMPETITION</td>
+                            <td>USD</td>
+                            <td>HIGHER</td>
+                            <td>$30.00</td>
+                         </tr>
+                         <tr>
+                            <th scope="row">4</th>
+                            <td>CE Shop LOW FL CE Package - Standard</td>
+                            <td>This is my CE SHOP Alert LOWER PRICE for FL CE Package - Standard</td>
+                            <td>CE SHOP 2</td>
+                            <td>COMPETITION</td>
+                            <td>USD</td>
+                            <td>LOWER</td>
+                            <td>$30.00</td>
+                         </tr>
+                         
+                           
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            
+          </div>
+       </div>
+    </section>
+ </main>
