@@ -14,10 +14,24 @@ export class ProductReportsComponent implements OnInit {
   });
   constructor( private readonly formBuilder: FormBuilder,) { }
 
-  getFileContent() {
-    window.location.assign(
-      ".assets/reprotfiles/ALL_PRODUCTS_REPORT.PDF"
-    );
+  printProductReport(searchType: string) {
+    if(searchType === 'ALL'){
+      window.open("/assets/reportfiles/ALL_PRODUCTS_REPORT.PDF");
+    }else if(searchType === 'BRAND'){
+      window.open("/assets/reportfiles/PRODUCTS_BY_BRAND_REPORT.pdf");
+     }else if(searchType === 'LOCALE'){
+      window.open("/assets/reportfiles/PRODUCTS_BY_LOCALE_REPORT.pdf");
+    } 
+  }
+  downloadProductCSVReport(searchType: string){
+    if(searchType === 'ALL'){
+      window.location.assign("/assets/reportfiles/ALL_PRODUCTS.csv");
+    }else if(searchType === 'BRAND'){
+      window.location.assign("/assets/reportfiles/PRODUCTSBY_BRAND.csv");
+     }else if(searchType === 'LOCALE'){
+      window.location.assign("/assets/reportfiles/PRODUCTSBY_LOCALE.csv");
+    } 
+   
   }
   ngOnInit(): void {
   }
@@ -41,6 +55,5 @@ export class ProductReportsComponent implements OnInit {
     this.brandFlag = false;
     this.localeFlag = false;
    }
-    console.log("productReportType",proReportType);
   }
 }

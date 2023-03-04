@@ -1,0 +1,8 @@
+﻿360 PRICE NAVIGATOR,,,,,,,,
+ALL PRODUCTS REPORT,,,,,,,,
+PRODUCT ID,PRODUCT NAME,PRODUCT BRAND,PRODUCT LOCALE,PRODUCT CATEGORY,PRODUCT (PRICE1),PRODUCT (PRICE2),PRODUCT (PRICE3),PRODUCT SKU/BARCODE
+111111,The Basics,Real Estate,FL,Continuing Education,$139.00 ,$97.30 ,$0.00 ,SKU111111
+122222,Exam Preparation,Real Estate,FL,Continuing Education,$209.00 ,$146.30 ,$0.00 ,SKU222222
+133333,Exam Preparation Plus,Real Estate,FL,Continuing Education,$319.00 ,$223 ,$0.00 ,SKU333333
+144444,Ultimate Learning,Real Estate,FL,Continuing Education,$439.00 ,$307.30 ,$0.00 ,SKU444444
+TOTAL PRODUCTS,4,,,,,,,

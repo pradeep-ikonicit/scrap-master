@@ -41,10 +41,10 @@
             <div class="card" *ngIf="allFlag">
                <div class="align-button">
                     <!-- <a routerLink="/products/add-product"> -->
-                     <button type="button" class="btn" (click)="getFileContent()">
+                     <button type="button" class="btn" (click)="printProductReport('ALL')">
                        Print
                      </button> | 
-                     <button type="button" class="btn">
+                     <button type="button" class="btn"  (click)="downloadProductCSVReport('ALL')">
                        Download
                      </button>
                    <!-- </a> -->
@@ -113,10 +113,10 @@
             <div class="card" *ngIf="brandFlag">
                <div class="align-button">
                     <!-- <a routerLink="/products/add-product"> -->
-                     <button type="button" class="btn">
+                     <button type="button" class="btn" (click)="printProductReport('BRAND')">
                        Print
                      </button> | 
-                     <button type="button" class="btn">
+                     <button type="button" class="btn"  (click)="downloadProductCSVReport('BRAND')">
                        Download
                      </button>
                    <!-- </a> -->
@@ -185,10 +185,10 @@
             <div class="card" *ngIf="localeFlag">
                <div class="align-button">
                     <!-- <a routerLink="/products/add-product"> -->
-                     <button type="button" class="btn">
+                     <button type="button" class="btn"  (click)="printProductReport('LOCALE')">
                        Print
                      </button> | 
-                     <button type="button" class="btn">
+                     <button type="button" class="btn"  (click)="downloadProductCSVReport('LOCALE')">
                        Download
                      </button>
                    <!-- </a> -->

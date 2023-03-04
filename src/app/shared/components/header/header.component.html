@@ -1,10 +1,48 @@
 <header id="header" class="header fixed-top align-items-center" style="padding-right: 16px;">
   <div class="row d-flex align-items-center justify-content-between" style="width: 100%">
     <div class="col-lg-6"><a routerLink="/dashboard" class="logo-1 d-flex align-items-center">
-      <img src="assets/img/logo-1.png" alt="" />
+      <!-- <img src="assets/img/logo-1.png" alt="" /> -->
       <!-- <span class="d-none d-lg-block">Scrap Master</span> -->
     </a>
   </div>
+    
+  </div>
+  <div class="d-flex align-items-center second-header">
+    <div class="col-lg-3">
+      <a routerLink="/dashboard" class="logo d-flex align-items-center">
+        <img src="assets/img/360-new.png" alt="" />
+        <!-- <span class="d-none d-lg-block">Scrap Master</span> -->
+      </a>
+      <!-- <i (click)="sidebarToggle()" class="bi bi-list toggle-sidebar-btn"></i> -->
+    </div>
+    <div class="col-lg-5">
+      <!-- <div class="card">
+        <div class="card-body"> -->
+      <!-- <h5 class="card-title">Bordered Tabs</h5> -->
+      <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+        <li class="nav-item" role="presentation"> <button  routerLink="/dashboard" routerLinkActive="active" class="nav-link" id="dashboad-tab" data-bs-toggle="tab"
+            data-bs-target="#bordered-dashboad" type="button" role="tab" aria-controls="dashboad"
+            aria-selected="true">Dashboard</button></li>
+        <li class="nav-item" role="presentation"> <button routerLink="/products" routerLinkActive="active" class="nav-link" id="products-tab" data-bs-toggle="tab"
+            data-bs-target="#bordered-products" type="button" role="tab" aria-controls="products"
+            aria-selected="false">Products</button></li>
+        <li class="nav-item" role="presentation"> <button  routerLink="/tracker" routerLinkActive="active"  class="nav-link" id="tracker-tab" data-bs-toggle="tab"
+            data-bs-target="#bordered-tracker" type="button" role="tab" aria-controls="tracker"
+            aria-selected="false">Tracker</button></li>
+        <li class="nav-item" role="presentation"> <button  routerLink="/alerts" routerLinkActive="active" class="nav-link" id="alerts-tab" data-bs-toggle="tab"
+              data-bs-target="#bordered-alerts" type="button" role="tab" aria-controls="alerts"
+              aria-selected="true">Alerts</button></li>
+        <li class="nav-item" role="presentation"> <button routerLink="/reports" routerLinkActive="active" class="nav-link" id="reprots-tab" data-bs-toggle="tab"
+              data-bs-target="#bordered-reprots" type="button" role="tab" aria-controls="reprots"
+              aria-selected="false">Reports</button></li>
+        <li class="nav-item" role="presentation"> <button class="nav-link" id="settings-tab" data-bs-toggle="tab"
+              data-bs-target="#bordered-settings" type="button" role="tab" aria-controls="settings"
+              aria-selected="false">Settings</button></li>  
+        
+      </ul>
+      <!-- </div>
+     </div> -->
+    </div>
     <div class="col-lg-4">
       <nav class="header-nav ms-auto" style="float: right">
         <!-- <div id="settings-div" class="col-lg-4 d-flex align-items-right" style="width:100%">
@@ -49,43 +87,6 @@
           </li>
         </ul>
       </nav>
-    </div>
-  </div>
-  <div class="d-flex align-items-center second-header">
-    <div class="col-lg-3">
-      <a routerLink="/dashboard" class="logo d-flex align-items-center">
-        <img src="assets/img/360-new.png" alt="" />
-        <!-- <span class="d-none d-lg-block">Scrap Master</span> -->
-      </a>
-      <!-- <i (click)="sidebarToggle()" class="bi bi-list toggle-sidebar-btn"></i> -->
-    </div>
-    <div class="col-lg-5">
-      <!-- <div class="card">
-        <div class="card-body"> -->
-      <!-- <h5 class="card-title">Bordered Tabs</h5> -->
-      <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
-        <li class="nav-item" role="presentation"> <button  routerLink="/dashboard" routerLinkActive="active" class="nav-link" id="dashboad-tab" data-bs-toggle="tab"
-            data-bs-target="#bordered-dashboad" type="button" role="tab" aria-controls="dashboad"
-            aria-selected="true">Dashboard</button></li>
-        <li class="nav-item" role="presentation"> <button routerLink="/products" routerLinkActive="active" class="nav-link" id="products-tab" data-bs-toggle="tab"
-            data-bs-target="#bordered-products" type="button" role="tab" aria-controls="products"
-            aria-selected="false">Products</button></li>
-        <li class="nav-item" role="presentation"> <button  routerLink="/tracker" routerLinkActive="active"  class="nav-link" id="tracker-tab" data-bs-toggle="tab"
-            data-bs-target="#bordered-tracker" type="button" role="tab" aria-controls="tracker"
-            aria-selected="false">Tracker</button></li>
-        <li class="nav-item" role="presentation"> <button  routerLink="/alerts" routerLinkActive="active" class="nav-link" id="alerts-tab" data-bs-toggle="tab"
-              data-bs-target="#bordered-alerts" type="button" role="tab" aria-controls="alerts"
-              aria-selected="true">Alerts</button></li>
-        <li class="nav-item" role="presentation"> <button routerLink="/reports" routerLinkActive="active" class="nav-link" id="reprots-tab" data-bs-toggle="tab"
-              data-bs-target="#bordered-reprots" type="button" role="tab" aria-controls="reprots"
-              aria-selected="false">Reports</button></li>
-        <li class="nav-item" role="presentation"> <button class="nav-link" id="settings-tab" data-bs-toggle="tab"
-              data-bs-target="#bordered-settings" type="button" role="tab" aria-controls="settings"
-              aria-selected="false">Settings</button></li>  
-        
-      </ul>
-      <!-- </div>
-     </div> -->
     </div>
   </div>
 
