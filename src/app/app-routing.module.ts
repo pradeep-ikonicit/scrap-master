@@ -14,6 +14,9 @@ import { ReportsComponent } from './reports/reports.component';
 import { ProductReportsComponent } from './product-reports/product-reports.component';
 import { TrackerReportsComponent } from './tracker-reports/tracker-reports.component';
 import { AlertReportsComponent } from './alert-reports/alert-reports.component';
+import { SettingsHomeComponent } from './settings-home/settings-home.component';
+import { ProductsSettingsComponent } from './products-settings/products-settings.component';
+import { TrackerSettingsComponent } from './tracker-settings/tracker-settings.component';
 
 const routes: Routes = [
   {
@@ -75,6 +78,18 @@ const routes: Routes = [
   {
     path: 'alert-reports',
     component: AlertReportsComponent
+  },
+  {
+    path: 'settings-home',
+    component: SettingsHomeComponent
+  },
+  {
+    path: 'settings-products',
+    component: ProductsSettingsComponent
+  },
+  {
+    path: 'settings-trackers',
+    component: TrackerSettingsComponent
   }
 ];
 

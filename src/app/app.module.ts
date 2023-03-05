@@ -18,6 +18,9 @@ import { ReportsComponent } from './reports/reports.component';
 import { ProductReportsComponent } from './product-reports/product-reports.component';
 import { TrackerReportsComponent } from './tracker-reports/tracker-reports.component';
 import { AlertReportsComponent } from './alert-reports/alert-reports.component';
+import { SettingsHomeComponent } from './settings-home/settings-home.component';
+import { ProductsSettingsComponent } from './products-settings/products-settings.component';
+import { TrackerSettingsComponent } from './tracker-settings/tracker-settings.component';
 // import { ProductsModule } from './products/products.module';
 // import { HeaderComponent } from './shared/components/header/header.component';
 
@@ -36,7 +39,10 @@ import { AlertReportsComponent } from './alert-reports/alert-reports.component';
     ReportsComponent,
     ProductReportsComponent,
     TrackerReportsComponent,
-    AlertReportsComponent
+    AlertReportsComponent,
+    SettingsHomeComponent,
+    ProductsSettingsComponent,
+    TrackerSettingsComponent
   ],
   imports: [
     BrowserModule,

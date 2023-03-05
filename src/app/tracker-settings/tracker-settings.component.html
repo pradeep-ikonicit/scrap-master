@@ -1,0 +1,65 @@
+<app-header></app-header>
+<!-- <app-side-nav></app-side-nav> -->
+
+
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Tracker Settings</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+                <li class="breadcrumb-item">Tracker Settings</li>
+            </ol>
+        </nav>
+    </div>
+
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Tracker Settings</h5>
+                        <button type="button" (click)="addQuantity()" class="btn btn-primary" style="float: right;">Add
+                            More</button>
+                        <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                            <table class="table datatable" formArrayName="quantities">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Customize Field Labels</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Custom Label Inputs</th>
+                                        <th scope="col">Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let quantity of quantities().controls; let i=index" [formGroupName]="i">
+                                        <th scope="row">{{i +1}}</th>
+                                        <td><input type="text" formControlName="fieldLabel" 
+                                                class="form-control table-colomn-style"></td>
+                                        <td><input type="text" formControlName="description"
+                                                class="form-control table-colomn-style"></td>
+                                        <td><input type="text" formControlName="lableInput"
+                                                class="form-control table-colomn-style"></td>
+                                        <td><button (click)="removeQuantity(i)" class="btn btn-danger">Remove</button>
+                                        </td>
+
+                                    </tr>
+
+
+
+                                </tbody>
+                            </table>
+                            <button type="submit" class="btn btn-success">Submit</button>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
